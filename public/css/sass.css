@@ -1,0 +1,162 @@
+html,
+body {
+    height: 100%;
+}
+
+login-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+
+
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-error
+{
+    color: red;
+    font-size: small;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Make the svg a white circle and give it the default spinning animation */
+svg {
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 3s ease infinite alternate;
+}
+
+/*Give each dot a radius of 20*/
+.shape {
+    r: 20;
+}
+
+/*Give each dot its positioning and set the default animation and color for each */
+.shape:nth-child(1) {
+    cy: 50;
+    cx: 50;
+    fill: #c20f00;
+    animation: movein 3s ease infinite alternate;
+}
+.shape:nth-child(2) {
+    cy: 50;
+    cx: 150;
+    fill: #ffdd22;
+    animation: movein 3s ease infinite alternate;
+}
+.shape:nth-child(3) {
+    cy: 150;
+    cx: 50;
+    fill: #2374c6;
+    animation: movein 3s ease infinite alternate;
+}
+.shape:nth-child(4) {
+    cy: 150;
+    cx: 150;
+    fill: #000000;
+    animation: movein 3s ease infinite alternate;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Move all the dots toward the center */
+@keyframes movein {
+    to {
+        cy: 100;
+        cx: 100;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.editButton{
+
+    border-radius: 50px;
+}
+.deleteButton{
+    border-radius: 50px;
+}
+#createButton{
+    margin-right: 15px;
+    border-radius: 50px;
+}
+.searchInput{
+    margin-right: 25px;
+}
+
+.card-item
+{
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+.card-item span
+{
+    text-align: center;
+    font-weight: 200;
+    display: block;
+
+}
